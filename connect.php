@@ -1,3 +1,3 @@
 <?php
-$connect=mysqli_connect('localhost','root','','qlkh') or die ('ERRRO');
+$connect=mysqli_connect('localhost','php','12345678','qlkh') or die ('ERRRO');
 ?>
