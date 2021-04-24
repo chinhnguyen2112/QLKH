@@ -1,16 +1,22 @@
-<?php
-    include('connect.html');
-?>
+
 <form action="#" method="POST">
     <table border="10">
         <tr>
             <td>Mã KH</td>
             <td>Tên kh</td>
-            <td>Số lượnbg</td>
+            <td>Số lượng</td>
             <td>Đơn giá</td>
             <td>Tổng tiền</td>
         </tr>
         <?php
+            $ dbServerName  =  "remotemysql.com" ; 
+            $ dbUsername  =  "lmfin8Rkjb" ; 
+            $ dbPassword  =  "B8VgSyZoYY" ; 
+            $ dbName  =  "lmfin8Rkjb" ; 
+
+
+$ connect  = new  mysqli ( $ dbServerName ,  $ dbUsername ,  $ dbPassword ,  $ dbName ); 
+        
             $query=mysqli_query($connect,"SELECT * FROM muahang");
             while($show=mysqli_fetch_assoc($query))
             {
