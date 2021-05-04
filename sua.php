@@ -1,4 +1,3 @@
-
 <form action="sua1.php" method="POST">
     <table border="2">
     <?php
@@ -13,9 +12,9 @@ echo '<option value="">-----Chọn---</option>';
             '</select>'
         
 ?>
-        <div class="row">
-            <input type="submit" name="go" value="GO">
-            </div>
+        <tr>
+            <td><input type="submit" name="go" value="GO"></td>
+        </tr>
     </table>
 </form>
-
+ 
