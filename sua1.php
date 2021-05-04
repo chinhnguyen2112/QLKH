@@ -22,7 +22,7 @@ $gia=$row['DonGia'];
 <div class="content">
 <h1>Sửa thông tin khách hàng</h1>
 <form action="#" method="POST">
-    <table border="2">
+  
         <div class="row">
             <span>Mã KH</span>
             <input type="text" name="ma" value="<?php echo $makh ?>">
@@ -46,7 +46,7 @@ $gia=$row['DonGia'];
             </div>
     
    
-    </table>
+ 
 </form>
 </div>
 <?php
