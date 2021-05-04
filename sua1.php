@@ -10,7 +10,8 @@
 
 <?php 
 include("connect.php");
-$ma=$_POST['ma'];
+  $id= $_GET['id'];
+
 $query=mysqli_query($connect,"SELECT* FROM muahang where MaKH=$ma");
 $row=mysqli_fetch_assoc($query);
 $makh=$row['MaKH'];
