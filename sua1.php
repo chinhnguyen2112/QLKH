@@ -14,15 +14,15 @@ include("connect.php");
 
 $query=mysqli_query($connect,"SELECT* FROM muahang where MaKH=$id");
 $row=mysqli_fetch_assoc($query);
-$makh=$row['MaKH'];
-$ten=$row['HoTen'];
-$sl=$row['SoLuong'];
-$gia=$row['DonGia'];
+$makh=    $row['MaKH'];
+$ten=     $row['HoTen'];
+$sl=      $row['SoLuong'];
+$gia=     $row['DonGia'];
 
 ?>
 <div class="content">
 <h1>Sửa thông tin khách hàng</h1>
-<form action="#" method="GET">
+<form action="#" method="POST">
   
         <div class="row">
             <span>Mã KH</span>
@@ -52,12 +52,12 @@ $gia=$row['DonGia'];
 </form>
 </div>
 <?php
-    if(isset($_GET['sua']))
+    if(isset($_POST['sua']))
     {
-        $makh=$_GET['ma'];
-        $ten=$_GET['ten'];
-        $gia=$_GET['gia'];
-        $sl=$_GET['sl'];
+        $makh=  $_POST['ma'];
+        $ten=   $_POST['ten'];
+        $gia=   $_POST['gia'];
+        $sl=    $_POST['sl'];
         $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`='$makh',`HoTen`='$ten',`SoLuong`='$sl',`DonGia`='$gia' WHERE 1");
         if($show){
             echo "<script> alert('Sửa thành công')</script>";
