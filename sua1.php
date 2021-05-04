@@ -12,7 +12,7 @@
 include("connect.php");
   $id= $_GET['id'];
 
-$query=mysqli_query($connect,"SELECT* FROM muahang where MaKH=$ma");
+$query=mysqli_query($connect,"SELECT* FROM muahang where MaKH=$id");
 $row=mysqli_fetch_assoc($query);
 $makh=$row['MaKH'];
 $ten=$row['HoTen'];
