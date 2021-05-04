@@ -1,6 +1,15 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CACULATOR</title>
+<link type="text/css" href="style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="content">
 <form action="sua1.php" method="POST">
     <table border="2">
-         <?php
+    <?php
 include('connect.php');
 echo '<select name="MaKH">';
 echo '<option value="">-----Chọn---</option>';
@@ -12,9 +21,10 @@ echo '<option value="">-----Chọn---</option>';
             '</select>'
         
 ?>
-        <tr>
-            <td><input type="submit" name="go" value="GO"></td>
-        </tr>
+        <div class="row">
+            <input type="submit" name="go" value="GO">
+            </div>
     </table>
 </form>
- 
+</div>
+</body>
