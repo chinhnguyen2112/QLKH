@@ -14,7 +14,7 @@ $ma=$_POST['ma'];
 $query=mysqli_query($connect,"SELECT* FROM muahang where MaKH=$ma");
 $row=mysqli_fetch_assoc($query);
 $makh=$row['MaKH'];
-$ten=$row['TenKH'];
+$ten=$row['HoTen'];
 $sl=$row['SoLuong'];
 $gia=$row['DonGia'];
 
@@ -25,21 +25,21 @@ $gia=$row['DonGia'];
   
         <div class="row">
             <span>Mã KH</span>
-            <input type="text" name="ma" value="<?php echo $makh ?>">
+            <input type="text" name="ma" value="<?php echo $makh; ?>">
        </div>
        <div class="row">
             <span>Tên KH</span>
-            <input type="text" name="ten" value="<?php echo $ten ?>">
+            <input type="text" name="ten" value="<?php echo $ten; ?>">
             </div>
    
         <div class="row">
             <span>Đơn giá</span>
-           <input type="text" name="gia"value="<?php echo $gia ?>">
+           <input type="text" name="gia"value="<?php echo $gia; ?>">
             </div>
        
         <div class="row">
             <span>Số lượng</span>
-            <input type="text" name="sl"value="<?php echo $sl ?>">
+            <input type="text" name="sl"value="<?php echo $sl; ?>">
             </div>
         <div class="row">
             <input type="submit" name="sua" value="SỬA">||<a href="index.php">««Back </a>
@@ -56,7 +56,7 @@ $gia=$row['DonGia'];
         $ten=$_POST['ten'];
         $gia=$_POST['gia'];
         $sl=$_POST['sl'];
-        $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`='$makh',`TenKH`='$ten',`SoLuong`='$sl',`DonGia`='$gia' WHERE 1");
+        $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`='$makh',`HoTen`='$ten',`SoLuong`='$sl',`DonGia`='$gia' WHERE 1");
         if($query){
             echo "<script> alert('Sửa thành công')</script>";
         }
