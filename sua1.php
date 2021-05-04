@@ -36,8 +36,7 @@ $gia=$row['DonGia'];
     
    
     </table>
-</form>
-<?php
+    <?php
     if(isset($_POST['sua']))
     {
         $makh=$_POST['ma'];
@@ -51,3 +50,5 @@ $gia=$row['DonGia'];
         else echo  "<script> alert('Sửa thất bại')</script>";
     }
 ?>
+</form>
+
