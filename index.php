@@ -35,8 +35,12 @@
                     <td><?php echo $show['DonGia'] ?></td>
                     <td><?php echo $show['SoLuong']*$show['DonGia'] ?></td>
                     <td>
-                        <a href="them.php">Thêm</a> || <a href="sua.php">Sửa</a> || <a href="xoa.php">Xóa</a>
+                         <a href="sua1.php?id=<?php echo $show['MaKH'] ?>"class="delete"> Sửa </a>  || 
+				 <a href="xoa.php?id=<?php echo $show['MaKH'] ?>"class="delete"> xóa </a> 
                      </td>
+                    <div class="row">
+                        <input type="submit" value="THÊM">
+                    </div>
                 </tr>
                 <?php
 
