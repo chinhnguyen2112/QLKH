@@ -1,13 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>QLKH</title>
-<link type="text/css" href="style.css" rel="stylesheet" media="screen">
-</head>
-<body>
-    <div class="content">
-        <h1>Chọn mã khách hàng</h1>
+
 <form action="sua1.php" method="POST">
     <table border="2">
     <?php
@@ -27,5 +18,4 @@ echo '<option value="">-----Chọn---</option>';
             </div>
     </table>
 </form>
-</div>
-</body>
+
