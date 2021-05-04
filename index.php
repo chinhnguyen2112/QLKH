@@ -38,10 +38,11 @@
                          <a href="sua1.php?id=<?php echo $show['MaKH'] ?>"class="delete"> Sửa </a>  || 
 				 <a href="xoa.php?id=<?php echo $show['MaKH'] ?>"class="delete"> xóa </a> 
                      </td>
-                    <div class="row">
+                    
+                </tr>
+		    <div class="row">
                         <input type="submit" value="THÊM">
                     </div>
-                </tr>
                 <?php
 
                     }
