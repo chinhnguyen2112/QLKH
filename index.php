@@ -9,6 +9,7 @@
             <td>Số lượnbg</td>
             <td>Đơn giá</td>
             <td>Tổng tiền</td>
+            <td>Chức năng</td>
         </tr>
         <?php
             $query=mysqli_query($connect,"SELECT * FROM muahang");
@@ -22,6 +23,9 @@
             <td><?php echo $show['SoLuong'] ?></td>
             <td><?php echo $show['DonGia'] ?></td>
             <td><?php echo $show['SoLuong']*$show['DonGia'] ?></td>
+            <td>
+                <a href="them.php">Thêm</a> || <a href="sua.php">Sửa</a> || <a href=xoa.php">Xóa</a>
+             </td>
         </tr>
         <?php
                 
