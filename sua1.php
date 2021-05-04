@@ -44,7 +44,7 @@ $gia=$row['DonGia'];
             </div>
         <div class="row">
         
-          <input type="submit"  value="SỬA"><a href="index.php">Back</a>
+          <input type="submit" name="sua"  value="SỬA"><a href="index.php">Back</a>
             </div>
     
    
