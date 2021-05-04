@@ -13,7 +13,7 @@
 <div class="content">
 <h1>Thông tin khách hàng</h1>
         <form action="#" method="POST">
-
+            <table border="3">
                 <tr>
                     <td>Mã KH</td>
                     <td>Tên KH</td>
@@ -43,7 +43,7 @@
                     }
                     ?>
 
-
+            </table>
         </form>
  </div>
     </body>
