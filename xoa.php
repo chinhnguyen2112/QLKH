@@ -1,5 +1,5 @@
 
-<form action="index.php" method="GET">
+<form action="#" method="GET">
     <table border="10">
     <?php
 include('connect.php');
