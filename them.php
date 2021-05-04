@@ -1,29 +1,42 @@
+  
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thêm thông tin khách hàng</title>
+<link type="text/css" href="style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
 <?php
 include('connect.php');
 ?>
-<form action="#" method="POST">
-    <table border="10">
-        <tr>
-            <td>Mã KH</td>
-            <td><input type="text" name="ma"></td>
-        </tr>
-        <tr>
-            <td>Tên KH</td>
-            <td><input type="text" name="ten"></td>
-        </tr>
-        <tr>
-            <td>Số Lượng</td>
-            <td><input type="text" name="sl"></td>
-        </tr>
-        <tr>
-            <td>Giá</td>
-            <td><input type="text" name="gia"></td>
-        </tr>
-        <tr>
-            <td><input type="submit" name="them" value="THÊM">||<a href="index.php"> Back</a></td>
-        </tr>
-    </table>
-</form>
+<div class="content">
+    <h1>Nhập thông tin khách hàng</h1>
+    <form action="#" method="POST">
+        
+            <div class="row">
+            <span>Mã KH</span>
+                <input type="text" name="ma">
+        </div>
+            <div class="row">
+            <span>Tên KH</span>
+                <input type="text" name="ten">
+             </div>
+           <div class="row">
+            <span>Số Lượng</span>
+                <input type="text" name="sl">
+             </div>
+            <div class="row">
+            <span>Giá</span>
+                <input type="text" name="gia">
+             </div>
+            <div class="row">
+                <input type="submit" name="them" value="THÊM"><a href="index.php"> Back</a>
+             </div>
+        
+    </form>
+</div>
 <?php
     if(isset($_POST['them']))
     {
@@ -38,3 +51,4 @@ include('connect.php');
         else echo  "<script> alert('thêm thành thất bại')</script>";
     } 
     ?>
+    </body>
