@@ -22,7 +22,7 @@ $gia=$row['DonGia'];
 ?>
 <div class="content">
 <h1>Sửa thông tin khách hàng</h1>
-<form action="#" method="POST">
+<form action="#" method="GET">
   
         <div class="row">
             <span>Mã KH</span>
@@ -52,12 +52,12 @@ $gia=$row['DonGia'];
 </form>
 </div>
 <?php
-    if(isset($_POST['sua']))
+    if(isset($_GET['sua']))
     {
-        $makh=$_POST['ma'];
-        $ten=$_POST['ten'];
-        $gia=$_POST['gia'];
-        $sl=$_POST['sl'];
+        $makh=$_GET['ma'];
+        $ten=$_GET['ten'];
+        $gia=$_GET['gia'];
+        $sl=$_GET['sl'];
         $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`='$makh',`HoTen`='$ten',`SoLuong`='$sl',`DonGia`='$gia' WHERE 1");
         if($show){
             echo "<script> alert('Sửa thành công')</script>";
