@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>CACULATOR</title>
+<title>Sửa thông tin khách hàng</title>
 <link type="text/css" href="style.css" rel="stylesheet" media="screen">
 </head>
 <body>
