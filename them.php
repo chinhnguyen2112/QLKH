@@ -1,7 +1,7 @@
 <?php
 include('connect.php');
 ?>
-<form action="#" method="POST">
+<form action="index.php" method="POST">
     <table border="10">
         <tr>
             <td>Mã KH</td>
