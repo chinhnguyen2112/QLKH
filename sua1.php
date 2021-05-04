@@ -31,29 +31,23 @@ $gia=$row['DonGia'];
         </tr>
         <tr>
             
-            <td><input type="submit" name="sua" value="SỬA"></td>
-        </tr>
-         <tr>
-            
-             <td><a href="index.php"><input type="submit" name="sua" value="« Back ↩"></a></td>
+            <td><input type="submit" name="sua" value="SỬA"></td> ||<td><a href="index.php">« Back </a></td>
         </tr>
     
    
     </table>
- 
 </form>
-   <?php
+<?php
     if(isset($_POST['sua']))
     {
         $makh=$_POST['ma'];
         $ten=$_POST['ten'];
         $gia=$_POST['gia'];
         $sl=$_POST['sl'];
-        $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`="$makh",`HoTen`="$ten",`SoLuong`="$sl",`DonGia`="$gia"  WHERE 1");
-        if($show){
-                     echo "<script> alert('Sửa thành công')</script>";
-                 }
-                else echo  "<script> alert('Sửa thất bại')</script>";
+        $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`='$makh',`HoTen`='$ten',`SoLuong`='$sl',`DonGia`='$gia' WHERE 1");
+        if($query){
+            echo "<script> alert('Sửa thành công')</script>";
+        }
+        else echo  "<script> alert('Sửa thất bại')</script>";
     }
 ?>
-
