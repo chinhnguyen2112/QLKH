@@ -17,7 +17,6 @@ echo '<option value="">-----Chọn---</option>';
           <td><input type="submit" name="xoa" value="XÓA"></td>
         </tr>
     </table>
-</form>
 <?php
 
     if(isset($_GET['xoa']))
@@ -31,3 +30,5 @@ echo '<option value="">-----Chọn---</option>';
         else echo  "<script> alert('Xóa thất bại')</script>";
     }
 ?>
+</form>
+
