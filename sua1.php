@@ -42,7 +42,8 @@ $gia=$row['DonGia'];
             <input type="text" name="sl"value="<?php echo $sl; ?>">
             </div>
         <div class="row">
-          <input type="submit"  value="SỬA"><td><a href="index.php"></a></td>
+          <span><a href="index.php">Back</a></span>
+          <input type="submit"  value="SỬA">
             </div>
     
    
