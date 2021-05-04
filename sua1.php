@@ -9,7 +9,7 @@ $sl=$row['SoLuong'];
 $gia=$row['DonGia'];
 
 ?>
-<form action="index.php" method="POST">
+<form action="#" method="POST">
     <table border="2">
         <tr>
             <td>Mã KH</td>
@@ -33,10 +33,16 @@ $gia=$row['DonGia'];
             
             <td><input type="submit" name="sua" value="SỬA"></td>
         </tr>
+         <tr>
+            
+             <td><a href="index.php"><input type="submit" name="sua" value="« Back ↩"></a></td>
+        </tr>
     
    
     </table>
-    <?php
+ 
+</form>
+   <?php
     if(isset($_POST['sua']))
     {
         $makh=$_POST['ma'];
@@ -50,5 +56,4 @@ $gia=$row['DonGia'];
         else echo  "<script> alert('Sửa thất bại')</script>";
     }
 ?>
-</form>
 
