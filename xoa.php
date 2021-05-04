@@ -14,11 +14,8 @@ echo '<option value="">-----Chọn---</option>';
         
 ?>
            
-          <td><input type="submit" name="xoa" value="XÓA"></td>
-        <tr>
-            
-             <td><a href="index.php"><input type="submit"  name="« Back ↩"></a></td>
-        </tr>
+          <td><input type="submit" name="xoa" value="XÓA"></td>||<td><a href="index.php">« Back </a></td>
+    
         
     </table>
 
