@@ -31,7 +31,7 @@ $gia=$row['DonGia'];
         </tr>
         <tr>
             
-            <td><input type="submit" name="sua" value="SỬA"></td> ||<td><a href="index.php">« Back </a></td>
+            <td><input type="submit" name="sua" value="SỬA"></td> ||<td><a href="index.php">««Back </a></td>
         </tr>
     
    
