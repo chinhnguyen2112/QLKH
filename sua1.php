@@ -13,21 +13,21 @@ $gia=$row['DonGia'];
     <table border="2">
         <tr>
             <td>Mã KH</td>
-            <td><input type="text" name="ma" value="<?php echo $makh ?>"></td>
+            <td><input type="text" name="ma" value="<?php echo $makh; ?>"></td>
         </tr>
         <tr>
             <td>Tên KH</td>
-            <td><input type="text" name="ten" value="<?php echo $ten ?>"></td>
+            <td><input type="text" name="ten" value="<?php echo $ten; ?>"></td>
         </tr>
    
     <tr>
             <td>Đơn Giá</td>
-            <td><input type="text" name="gia"value="<?php echo $gia ?>"></td>
+            <td><input type="text" name="gia"value="<?php echo $gia; ?>"></td>
         </tr>
        
     <tr>
             <td>Số Lượng</td>
-            <td><input type="text" name="sl"value="<?php echo $sl ?>"></td>
+            <td><input type="text" name="sl"value="<?php echo $sl; ?>"></td>
         </tr>
         <tr>
             
@@ -45,7 +45,7 @@ $gia=$row['DonGia'];
         $gia=$_POST['gia'];
         $sl=$_POST['sl'];
         $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`='$makh',`HoTen`='$ten',`SoLuong`='$sl',`DonGia`='$gia' WHERE 1");
-        if($query){
+        if($show){
             echo "<script> alert('Sửa thành công')</script>";
         }
         else echo  "<script> alert('Sửa thất bại')</script>";
