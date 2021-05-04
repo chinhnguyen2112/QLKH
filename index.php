@@ -40,15 +40,16 @@
                      </td>
                     
                 </tr>
-		    <div class="row">
-                        <input type="submit" value="THÊM">
-                    </div>
+		    
                 <?php
 
                     }
                     ?>
 
             </table>
+		<div class="row">
+                        <input type="submit" value="THÊM">
+                    </div>
         </form>
  </div>
     </body>
