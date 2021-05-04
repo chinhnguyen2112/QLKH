@@ -1,5 +1,5 @@
 
-<form action="#" method="GET">
+<form action="index.php" method="GET">
     <table border="10">
     <?php
 include('connect.php');
@@ -26,8 +26,8 @@ echo '<option value="">-----Chọn---</option>';
        
         $query=mysqli_query($connect,"DELETE FROM `muahang` WHERE MaKH=$ma");
         if($query){
-            echo "<script> alert('thêm thành công')</script>";
+            echo "<script> alert('Xóa thành công')</script>";
         }
-        else echo  "<script> alert('thêm thành thất bại')</script>";
+        else echo  "<script> alert('Xóa thất bại')</script>";
     }
 ?>
