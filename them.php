@@ -31,7 +31,7 @@ include('connect.php');
         $ten=$_POST['ten'];
         $sl=$_POST['sl'];
         $gia=$_POST['gia'];
-        $query=mysqli_query($connect,"INSERT INTO `muahang`(`MaKH`, `TenKH`, `SoLuong`, `DonGia`) VALUES ('$ma','$ten','$sl','$gia')");
+        $query=mysqli_query($connect,"INSERT INTO `muahang`(`MaKH`, `HoTen`, `SoLuong`, `DonGia`) VALUES ('$ma','$ten','$sl','$gia')");
         if($query){
             echo "<script> alert('thêm thành công')</script>";
         }
