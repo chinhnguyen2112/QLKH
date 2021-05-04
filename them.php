@@ -1,7 +1,7 @@
 <?php
 include('connect.php');
 ?>
-<form action="index.php" method="POST">
+<form action="#" method="POST">
     <table border="10">
         <tr>
             <td>Mã KH</td>
@@ -20,7 +20,7 @@ include('connect.php');
             <td><input type="text" name="gia"></td>
         </tr>
         <tr>
-            <td><input type="submit" name="them" value="THÊM"></td>
+            <td><input type="submit" name="them" value="THÊM">||<a href="index.php"></a></td>
         </tr>
     </table>
 </form>
