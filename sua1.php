@@ -49,7 +49,7 @@ $gia=$row['DonGia'];
         $ten=$_POST['ten'];
         $gia=$_POST['gia'];
         $sl=$_POST['sl'];
-        $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`='$makh',`HoTen`='$ten',`SoLuong`='$sl',`DonGia`='$gia' WHERE 1");
+        $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH`="$ma",`HoTen`="$ten",`SoLuong`="$sl",`DonGia`="$gia"  WHERE 1");
         if($show){
             echo "<script> alert('Sửa thành công')</script>";
         }
