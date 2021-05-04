@@ -19,7 +19,7 @@
         ?>
         <tr>
             <td><?php echo $show['MaKH'] ?></td>
-            <td><?php echo $show['TenKH'] ?></td>
+            <td><?php echo $show['HoTen'] ?></td>
             <td><?php echo $show['SoLuong'] ?></td>
             <td><?php echo $show['DonGia'] ?></td>
             <td><?php echo $show['SoLuong']*$show['DonGia'] ?></td>
