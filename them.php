@@ -36,5 +36,5 @@ include('connect.php');
             echo "<script> alert('thêm thành công')</script>";
         }
         else echo  "<script> alert('thêm thành thất bại')</script>";
-    }
+    } 
     ?>
