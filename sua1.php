@@ -65,3 +65,4 @@ $gia=$row['DonGia'];
         else echo  "<script> alert('Sửa thất bại')</script>";
     }
 ?>
+  </body>
