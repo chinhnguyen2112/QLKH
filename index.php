@@ -12,7 +12,7 @@
 ?>
 <div class="content">
 <h1>Thông tin khách hàng</h1>
-        <form action="#" method="POST">
+        <form action="them.php" method="POST">
             <table class="center" border="3">
                 <tr>
                     <td>Mã KH</td>
