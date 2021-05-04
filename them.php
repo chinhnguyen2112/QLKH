@@ -20,7 +20,7 @@ include('connect.php');
             <td><input type="text" name="gia"></td>
         </tr>
         <tr>
-            <td><input type="submit" name="them" value="THÊM">||<a href="index.php"></a></td>
+            <td><input type="submit" name="them" value="THÊM">||<a href="index.php"> Back</a></td>
         </tr>
     </table>
 </form>
