@@ -10,14 +10,14 @@
 
 <?php 
 include("connect.php");
-  $id= $_GET['id'];
+$id= $_GET['id'];
 
 $query=mysqli_query($connect,"SELECT* FROM muahang where MaKH=$id");
 $row=mysqli_fetch_assoc($query);
-$makh=    $row['MaKH'];
-$ten=     $row['HoTen'];
-$sl=      $row['SoLuong'];
-$gia=     $row['DonGia'];
+$makh=$row['MaKH'];
+$ten=$row['HoTen'];
+$sl=$row['SoLuong'];
+$gia=$row['DonGia'];
 
 ?>
 <div class="content">
@@ -54,10 +54,10 @@ $gia=     $row['DonGia'];
 <?php
     if(isset($_POST['sua']))
     {
-        $makh=    $_POST['ma'];
-        $ten=     $_POST['ten'];
-        $gia=     $_POST['gia'];
-        $sl=      $_POST['sl'];
+        $makh=$_POST['ma'];
+        $ten=$_POST['ten'];
+        $gia=$_POST['gia'];
+        $sl=$_POST['sl'];
         $show=mysqli_query($connect,"UPDATE muahang SET MaKH='$makh' , HoTen='$ten' , SoLuong='$sl' , DonGia='$gia' WHERE 1");
         if($show){
             echo "<script> alert('Sửa thành công')</script>";
