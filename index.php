@@ -8,7 +8,7 @@
 <body>
 
 <?php
-    include('connect.php');
+    include("connect.php");
 ?>
 <div class="content">
 <h1>Thông tin khách hàng</h1>
