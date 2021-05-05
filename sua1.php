@@ -32,16 +32,17 @@ $gia=$row['DonGia'];
             <span>Tên KH</span>
             <input type="text" name="ten" value="<?php echo $ten; ?>">
             </div>
+       <div class="row">
+            <span>Số lượng</span>
+            <input type="text" name="sl"value="<?php echo $sl; ?>">
+            </div>
    
         <div class="row">
             <span>Đơn giá</span>
            <input type="text" name="gia"value="<?php echo $gia; ?>">
             </div>
        
-        <div class="row">
-            <span>Số lượng</span>
-            <input type="text" name="sl"value="<?php echo $sl; ?>">
-            </div>
+        
         <div class="row">
         
           <input type="submit" name="sua"  value="SỬA"><a href="index.php">Back</a>
@@ -56,9 +57,9 @@ $gia=$row['DonGia'];
     {
         $makh=$_POST['ma'];
         $ten=$_POST['ten'];
-        $gia=$_POST['gia'];
         $sl=$_POST['sl'];
-        $show=mysqli_query($connect,"UPDATE muahang SET MaKH='$makh' , HoTen='$ten' , SoLuong='$sl' , DonGia='$gia' WHERE 1");
+        $gia=$_POST['gia'];
+        $show=mysqli_query($connect,"UPDATE `muahang` SET `MaKH` = '$makh', `HoTen` = '$ten', `SoLuong` = '$sl', `DonGia` = '$gia' WHERE 1");
         if($show){
             echo "<script> alert('Sửa thành công')</script>";
         }
